@@ -50,13 +50,21 @@ h1::before {
 h1::after {
   width: 0.125em;
   background: black;
-  animation: typewriter var(--typewriterSpeed) steps(24) forwards;
+  animation:
+    typewriter var(--typewriterSpeed) steps(24) forwards,
+    blink 500ms steps(24) infinite; /* I found it can go without step(24), but with the step(24) here it the jumping on the blink effect is more prominent */
 }
 
 @keyframes typewriter {
   /* If your start position is the same as your initial value of the page layout, then you don't need to have a from in the keyframe */
   to {
     left: 100%;
+  }
+}
+
+@keyframes blink {
+  to {
+    background: transparent;
   }
 }
 
