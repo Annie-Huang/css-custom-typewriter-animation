@@ -54,8 +54,15 @@ h1::after {
   background: black;
   animation:
     typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards,
-    blink 750ms steps(24) infinite; /* I found it can go without step(24), but with the step(24) here it the jumping on the blink effect is more prominent */
+    blink 750ms steps(var(--typewriterCharacters)) infinite; /* I found it can go without step(24), but with the step(24) here it the jumping on the blink effect is more prominent */
 }
+
+.subtitle {
+  color: hsla(0, 0%, 0%, 0.7);
+  font-size: 2rem;
+  font-weight: 400;
+}
+
 
 @keyframes typewriter {
   /* If your start position is the same as your initial value of the page layout, then you don't need to have a from in the keyframe */
@@ -68,10 +75,4 @@ h1::after {
   to {
     background: transparent;
   }
-}
-
-.subtitle {
-  color: hsla(0, 0%, 0%, 0.7);
-  font-size: 2rem;
-  font-weight: 400;
 }
