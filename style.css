@@ -17,6 +17,12 @@ h1 {
   position: relative;
   font-family: "Source Code Pro", monospace;
   position: relative;
+
+/*  // If you don't have the display: grid, place-content and text-align version in the body,
+  // you can still control the h1 width (default is full width 100%) by using the max-content value.
+  outline: 2px solid red;
+  width: max-content;*/
+
 }
 
 h1::before,
