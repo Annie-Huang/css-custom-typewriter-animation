@@ -26,10 +26,16 @@ h1::after {
 
 h1::before {
   background: teal;
-  animation: typewriter 1s ease forwards; /* the forwards keyword means it doesn't go back to the start position */
+
+  /* the forwards keyword means it doesn't go back to the start position */
+  /*animation: typewriter 1s ease forwards; */
+
+  /* steps will make it jump every characters (we got total 24 characters), Very nice effect, didn't know we can do that.*/
+  animation: typewriter 4s steps(24) forwards;
 }
 
 @keyframes typewriter {
+  /* If your start position is the same as your initial value of the page layout, then you don't need to have a from in the keyframe */
   to {
     left: 100%;
   }
