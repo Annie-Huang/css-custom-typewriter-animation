@@ -1,5 +1,6 @@
 :root {
   --bg-color: hsl(49, 37%, 94%);
+  --typewriterSpeed: 6s;
 }
 
 body {
@@ -43,13 +44,13 @@ h1::before {
   /*animation: typewriter 1s ease forwards; */
 
   /* steps will make it jump every characters (we got total 24 characters), Very nice effect, didn't know we can do that.*/
-  animation: typewriter 4s steps(24) forwards;
+  animation: typewriter var(--typewriterSpeed) steps(24) forwards;
 }
 
 h1::after {
   width: 0.125em;
   background: black;
-  animation: typewriter 4s steps(24) forwards;
+  animation: typewriter var(--typewriterSpeed) steps(24) forwards;
 }
 
 @keyframes typewriter {
