@@ -46,6 +46,11 @@ h1::before {
   animation: typewriter 4s steps(24) forwards;
 }
 
+h1::after {
+  width: 0.125em;
+  background: black;
+}
+
 @keyframes typewriter {
   /* If your start position is the same as your initial value of the page layout, then you don't need to have a from in the keyframe */
   to {
