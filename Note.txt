@@ -1,0 +1,6 @@
+Customizable typewriter animation with CSS (https://www.youtube.com/watch?v=w1nhwUGsG6M)
+
+https://codepen.io/kevinpowell/pen/ExWZzmm
+https://github.com/Annie-Huang/css-custom-typewriter-animation
+========================================================================================
+
