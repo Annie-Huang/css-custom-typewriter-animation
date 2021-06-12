@@ -26,6 +26,13 @@ h1::after {
 
 h1::before {
   background: teal;
+  animation: typewriter 1s ease forwards; /* the forwards keyword means it doesn't go back to the start position */
+}
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
 }
 
 .subtitle {
