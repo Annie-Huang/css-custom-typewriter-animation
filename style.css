@@ -4,6 +4,7 @@
 
 body {
   margin: 0;
+  /* The reason we use this font-family is that each letters in this front family has the same width. */
   font-family: "Source Sans Pro", sans-serif;
   min-height: 100vh;
   display: grid;
@@ -27,7 +28,7 @@ h1 {
 
 h1::before,
 h1::after {
-  /*content: '';*/
+  content: '';
   position: absolute;
   top: 0;
   right: 0;
@@ -36,7 +37,7 @@ h1::after {
 }
 
 h1::before {
-  background: teal;
+  background: var(--bg-color);
 
   /* the forwards keyword means it doesn't go back to the start position */
   /*animation: typewriter 1s ease forwards; */
