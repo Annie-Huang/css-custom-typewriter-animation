@@ -49,6 +49,7 @@ h1::before {
 h1::after {
   width: 0.125em;
   background: black;
+  animation: typewriter 4s steps(24) forwards;
 }
 
 @keyframes typewriter {
