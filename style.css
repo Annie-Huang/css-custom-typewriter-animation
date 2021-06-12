@@ -53,7 +53,7 @@ h1::after {
   background: black;
   animation:
     typewriter var(--typewriterSpeed) steps(24) 1s forwards,
-    blink 500ms steps(24) infinite; /* I found it can go without step(24), but with the step(24) here it the jumping on the blink effect is more prominent */
+    blink 750ms steps(24) infinite; /* I found it can go without step(24), but with the step(24) here it the jumping on the blink effect is more prominent */
 }
 
 @keyframes typewriter {
