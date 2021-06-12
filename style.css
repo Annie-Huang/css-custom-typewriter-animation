@@ -44,14 +44,15 @@ h1::before {
   /*animation: typewriter 1s ease forwards; */
 
   /* steps will make it jump every characters (we got total 24 characters), Very nice effect, didn't know we can do that.*/
-  animation: typewriter var(--typewriterSpeed) steps(24) forwards;
+  /* Give a 1s delay make the type writer (blink effect) more mirroring to a 'ready to type' effect. */
+  animation: typewriter var(--typewriterSpeed) steps(24) 1s forwards;
 }
 
 h1::after {
   width: 0.125em;
   background: black;
   animation:
-    typewriter var(--typewriterSpeed) steps(24) forwards,
+    typewriter var(--typewriterSpeed) steps(24) 1s forwards,
     blink 500ms steps(24) infinite; /* I found it can go without step(24), but with the step(24) here it the jumping on the blink effect is more prominent */
 }
 
